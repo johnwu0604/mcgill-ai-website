@@ -546,7 +546,7 @@ mark {
 
 .img-fluid {
     max-width: 35%;
-    height: auto
+    height: auto;
 }
 
 .img-thumbnail {
@@ -5657,7 +5657,7 @@ a.bg-dark:hover {
 }
 
 .rounded-circle {
-    border-radius: 50%
+    border-radius: 50% !important;
 }
 
 .rounded-0 {
