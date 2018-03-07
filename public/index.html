@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="mcgill-ai">
 
 <head>
     <meta charset="utf-8" />
@@ -16,9 +16,12 @@
     <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
     <!-- CSS Just for demo purpose, don't include it in your project -->
     <link href="./assets/css/demo.css" rel="stylesheet" />
+    <!-- AngularJS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="./assets/js/angular/core.js"></script>
 </head>
 
-<body class="index-page sidebar-collapse">
+<body class="index-page sidebar-collapse" ng-controller="mainController">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="400">
         <div class="container">
@@ -56,8 +59,11 @@
             </div>
         </div>
     </nav>
-    <!-- End Navbar -->
+
+    <!-- Main Body -->
     <div class="wrapper">
+
+        <!-- Header -->
         <div class="page-header clear-filter" filter-color="orange">
             <div class="page-header-image" data-parallax="true" style="background-image: url('./assets/img/wallpaper.jpg');">
             </div>
@@ -69,7 +75,11 @@
                 </div>
             </div>
         </div>
+
+        <!-- Main Content -->
         <div class="main">
+
+            <!-- About Us -->
             <div class="section section-about-us">
                 <div class="container">
                     <div class="row">
@@ -134,7 +144,8 @@
                 </div>
             </div>
 
-            <div class="section section-tabs">
+            <!-- Timeline -->
+            <div class="section section-timeline">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 ml-auto mr-auto text-center">
@@ -148,29 +159,20 @@
                                     <div class="direction-r">
                                         <div class="flag-wrapper">
                                             <span class="flag">Microsoft ML Tutorial</span>
-                                            <span class="time-wrapper"><span class="time">March 16</span></span>
+                                            <span class="time-wrapper"><span class="time">March 19</span></span>
                                         </div>
                                         <div class="desc">An interactive workshop on learning how to use Microsoft's
-                                        ML Studio to train a data model. <a href="#" target="_blank">More Info</a></div>
+                                        ML Studio to train a data model. More info to come!</div>
                                     </div>
                                 </li>
                                 <li>
                                     <div class="direction-l">
                                         <div class="flag-wrapper">
                                             <span class="flag">Recruiting Application Deadline</span>
-                                            <span class="time-wrapper"><span class="time">March 17</span></span>
+                                            <span class="time-wrapper"><span class="time">March 24</span></span>
                                         </div>
-                                        <div class="desc">Deadline to apply for an executive position for the
-                                        upcoming school year <a href="#" target="_blank">More Info</a></div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="direction-r">
-                                        <div class="flag-wrapper">
-                                            <span class="flag">Concordia vs McGill</span>
-                                            <span class="time-wrapper"><span class="time">March 28</span></span>
-                                        </div>
-                                        <div class="desc">The ultimate showdown against the cross town rival. <a href="#" target="_blank">More Info</a></div>
+                                        <div class="desc">We are recruiting new execs for the upcoming school year.
+                                        Stay tuned for more details!</div>
                                     </div>
                                 </li>
                             </ul>
@@ -179,7 +181,7 @@
                 </div>
             </div>
 
-
+            <!-- Team Members -->
             <div class="section section-team text-center">
                 <div class="container">
                     <h2 class="title">Our Team</h2>
@@ -245,10 +247,11 @@
                             </div>
                             <div class="col-md-4">
                                 <div class="team-player">
-                                    <img src="./assets/img/default-avatar.png" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
+                                    <img src="./assets/img/hisham.jpg" alt="Thumbnail Image" class="rounded-circle img-fluid img-raised">
                                     <h4 class="title">Hisham Hawara</h4>
                                     <p class="category text-primary">VP Events</p>
-                                    <p class="description">Hisham has no description and I also don't have a pic of him</p>
+                                    <p class="description">Hisham is a second-year software engineering student.
+                                        He is interested in computer vision and pattern recognition.</p>
                                     <a href="https://www.linkedin.com/in/hisham-hawara/" target="_blank" class="btn btn-primary btn-icon btn-round"><i class="fa fa-linkedin"></i></a>
                                     <a href="https://www.facebook.com/hishamhawara1" target="_blank" class="btn btn-primary btn-icon btn-round"><i class="fa fa-facebook-square"></i></a>
                                 </div>
@@ -258,8 +261,8 @@
                 </div>
             </div>
 
-
-            <div class="section section-nucleo-icons">
+            <!-- Sponsors -->
+            <div class="section">
                 <div class="container">
                     <div class="row">
                         <h2 class="title">Our Sponsors</h2>
@@ -316,11 +319,12 @@
                 </div>
             </div>
 
-            <div class="section section-signup" style="background-image: url('assets/img/montreal.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
+            <!-- Contact Us -->
+            <div class="section section-contact" style="background-image: url('assets/img/montreal.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
                 <div class="container">
                     <div class="row">
-                        <div class="card card-signup" data-background-color="orange">
-                            <form class="form" method="" action="">
+                        <div class="card card-contact" data-background-color="orange">
+                            <form class="form">
                                 <div class="header text-center">
                                     <h4 class="title title-up">Contact Us</h4>
                                 </div>
@@ -329,21 +333,21 @@
                                         <span class="input-group-addon">
                                             <i class="now-ui-icons users_circle-08"></i>
                                         </span>
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" class="form-control" placeholder="Name" ng-model="emailFormData.name">
                                     </div>
                                     <div class="input-group form-group-no-border">
                                         <span class="input-group-addon">
                                             <i class="now-ui-icons ui-1_email-85"></i>
                                         </span>
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input type="text" class="form-control" placeholder="Email" ng-model="emailFormData.email">
                                     </div>
                                     <div class="input-group form-group-no-border">
-                                        <textarea type="text" class="form-control" placeholder="Message" rows="5"></textarea>
-                                        <!--<input type="text" class="form-control" placeholder="Message">-->
+                                        <textarea type="text" class="form-control" placeholder="Message" rows="5" ng-model="emailFormData.message"></textarea>
                                     </div>
                                 </div>
                                 <div class="footer text-center">
-                                    <a href="#" class="btn btn-neutral btn-round btn-lg">Send</a>
+                                    <button type="submit" class="btn btn-neutral btn-round btn-lg" ng-click="sendEmail()">Send</button>
+                                    <p>{{ email_success_message }}</p>
                                 </div>
                             </form>
                         </div>
@@ -353,7 +357,7 @@
 
         </div>
 
-        <!--  End Modal -->
+        <!--  Footer -->
         <footer class="footer" data-background-color="black">
             <div class="container">
                 <div class="copyright">

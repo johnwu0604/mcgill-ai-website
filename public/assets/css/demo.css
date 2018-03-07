@@ -386,7 +386,7 @@
     pointer-events: none;
 }
 
-.section-tabs {
+.section-timeline {
     background: #EEEEEE;
 }
 
@@ -466,7 +466,7 @@
     display: none;
 }
 
-.section-signup .col .btn {
+.section-contact .col .btn {
     margin-top: 30px;
 }
 
