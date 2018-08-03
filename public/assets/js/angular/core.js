@@ -1,4 +1,4 @@
-var app = angular.module('mcgill-ai', [])
+var app = angular.module('mcgill-ai', ['ngRoute'])
 
 app.controller('mainController', function($scope, $http) {
 
@@ -22,4 +22,11 @@ app.controller('mainController', function($scope, $http) {
         }
     }
 
+});
+
+app.config(function($routeProvider) {
+    $routeProvider
+    .when('/', {
+        templateUrl: "implementai.html"
+    })
 });
