@@ -28,6 +28,9 @@ env.config()
 
 // routes ======================================================================
 require('./routes/email')(app)
+app.get('/implementai-2018', function(req, res) {
+    res.sendFile(__dirname + '/public/implementai.html')
+})
 
 // listen (start app with node server.js) ======================================
 app.listen(port);

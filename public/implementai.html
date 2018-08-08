@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mcgill-ai">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./assets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="./assets/img/favicon.png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>McGill Artificial Intelligence Society</title>
+    <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+    <!--     Fonts and icons     -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <!-- CSS Files -->
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./assets/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="./assets/css/demo.css" rel="stylesheet" />
+    <!-- AngularJS -->
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="./assets/js/angular/core.js"></script>
+</head>
+
+<body class="index-page sidebar-collapse" ng-controller="mainController">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-transparent" color-on-scroll="400" style="background-color: #000;">
+        <div class="container">
+            <div class="navbar-translate">
+                <a class="navbar-brand" href="https://mcgillai.com/" rel="tooltip" data-placement="bottom">
+                    <img class="navbar-brand" width=120 src="./assets/img/mcgill-ai-letters.png" alt="">
+                </a>
+                <button class="navbar-toggler navbar-toggler"e="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar bar1"></span>
+                    <span class="navbar-toggler-bar bar2"></span>
+                    <span class="navbar-toggler-bar bar3"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse justify-content-end" id="navigation" data-nav-image="./assets/img/blurred-image-1.jpg">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/McGillAISociety" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                            <p class="d-lg-none d-xl-none">Twitter</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/McGillAI/" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                            <p class="d-lg-none d-xl-none">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/mcgillaisociety/" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                            <p class="d-lg-none d-xl-none">Instagram</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Check out our Medium blog" data-placement="bottom" href="https://medium.com/mcgill-artificial-intelligence-review" target="_blank">
+                            <i class="fa fa-medium"></i>
+                            <p class="d-lg-none d-xl-none">Medium</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Body -->
+    <div class="wrapper">
+
+        <!-- Header -->
+        <div class="page-header">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('./assets/img/implementai.jpg');">
+            </div>
+            <div class="container">
+                <div class="content-center brand">
+                    <img class="implementai-logo" src="./assets/img/implementai-logo.png" alt="">
+                    <h1 class="h1" style="font-size:3em;"><strong>IMPLEMENT<span style="color: #C0392B">AI</span><strong></h1>
+                    <h3>September 29-30, 2018</h3>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5rWz0ab3pLmirO1EdeHFNMysN9bqJkJFcfb6WZPpoIcCuOQ/viewform" target="_blank" class="btn btn-round btn-lg" target="_blank">Apply Now</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main">
+
+            <!-- About Us -->
+            <div class="section section-about-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-10 ml-auto mr-auto text-center">
+                            <h2 class="title">About</h2>
+                            <h5 class="description">Join us for the second iteration of ImplementAI, a 24-hour hackathon focused exclusively on AI! <br> <br>
+                                    ImplementAI will bring together students, researchers, and companies to explore creative applications using AI. Whether you plan on using AI-based platforms, virtual agents, open source technologies 
+                                    – or some combination of the sort – you will have access to GPUs, data sets, and guidance from our sponsors to 
+                                    navigate the technical ‘know-hows’ of AI, and ultimately, become better programmers – together. <br> <br>
+                                    Regardless of whether you’re an AI novice or veteran, everyone is welcome to join. We want you to bring life, a desire to learn about AI, 
+                                    and how it can be used to overcome societal problems and boost competitiveness.</h5>
+                            <!-- <h5 class="description">For 24 hours, ImplementAI will have 100 participants collaborate and build applications using the latest technology AI has to offer. The hackathon will bring together students, researchers, and companies to explore creative applications using AI. </h5>
+                            <h5 class="description">During your time here, you will meet other people passionate about AI and learn from the best mentors the industry has to offer. We will offer free food, super cool merchandise (aka: SWAG!), awesome prizes, and more food.</h5>
+                            <h5 class="description">Whether your are an AI novice or a veteran you will be given the tools, data-sets and guidance to develop your skills and leave knowing you are a better programmer than you were yesterday.</h5> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section" style="background-color: #e7e7e7;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 ml-auto mr-auto text-center">
+                            <h2 class="title">FAQ</h2>
+                        </div>
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="about-text-title">I am completely new to AI and I am nervous.</h4>
+                                    <p>Have no fear! First and foremost, all skill levels are welcome at ImplementAI. More importantly, we aim to provide a super-condensed - and fun - learning experience!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="about-text-title">What can I build?</h4>
+                                    <p>You can build any project that uses artificial intelligence! See last year's <a href="https://implementai.devpost.com/submissions">submissions</a> for inspiration.</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="about-text-title">What should I bring?</h4>
+                                    <p>Bring your student ID and your laptop - don’t forget your chargers! Toiletries are also recommended for hygiene.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="about-text-title">Will this cost money?</h4>
+                                    <p>Nope! This event is 100% free, food and swag included. However, we will not provide housing or transportation reimbursement.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="about-text-title">Who can attend?</h4>
+                                    <p>Undergraduate and graduate students at any university.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 ml-auto mr-auto">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <h4 class="about-text-title">What is the schedule?</h4>
+                                    <p>Hacking will take place between Saturday to Sunday morning, followed by a judging period along with prizes. More details will be announced closer to the event. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
+                </div>
+            </div>
+
+            <!-- Sponsors -->
+            <div class="section">
+                <div style="margin:0; width:100%">
+                    <div class="col-md-12 ml-auto mr-auto text-center" style="width:100vw;">
+                        <h2 class="title">Sponsors</h2>
+                    </div>
+                    <div class="row" style="width: 95vw; margin:auto; padding: 0;">
+                            <div class="row" style="display:inline-block">
+                                <a href="https://www.microsoft.com/en-ca" target="_blank" style="padding:0 3%"><img src="./assets/img/microsoft.png" class="img-raised"  style="width: 24%; "></a>
+                                <a href="https://www.automat.ai/" target="_blank" style="padding:0 3%"></a><img src="./assets/img/automat.png" class="img-raised"  style="width: 24%; "></a>
+                                <a href="https://wrnch.ai/" target="_blank" style="padding:0 3%"></a><img src="./assets/img/wrnch.png" class="img-raised"  style="width: 24%; "></a>
+                            </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="ml-auto mr-auto">
+                            <div class="col-lg-12 col-md-12 text-center sponsor-button">
+                                <h6>want to sponsor us?</h6>
+                                <a href="implement-ai-sponsorship-package.pdf" target="_blank" class="btn btn-round btn-lg" target="_blank">Sponsorship Package</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- McGill AI Society Info -->
+            <div class="section" style="background-color: #e7e7e7;">
+                <div class="container text-center">
+                    <div class="col-md-12 ml-auto mr-auto text-center">
+                        <h2 class="title">McGill Artificial Intelligence Society</h2>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-md-12 ml-auto mr-auto">
+                            <p>The McGill AI Society is a student run organisation at McGill University. Situated in the heart of Montreal – a leading world hub in Artificial Intelligence – we are committed to promoting education, research, and development in our community by facilitating workshops and knowledge exchange through various platforms. Since our inception in January 2017, 
+                                the McGill AI Society has become the largest AI Society in North America, and the fastest growing club on campus.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="row ml-auto mr-auto">
+                            <div class="col-lg-12 col-md-12 text-center sponsor-button">
+                                <a href="https://mcgillai.com/" target="_blank">Learn more on our website</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br><br>
+            </div>
+
+            <!-- Contact Us -->
+            <div class="section section-contact" style="background-image: url('assets/img/montreal.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="card card-contact" data-background-color="black" style="border-radius:5px">
+                            <form class="form">
+                                <div class="header text-center">
+                                    <h4 class="title title-up">Contact <span style="color: red">Us</span></h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="input-group form-group-no-border">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons users_circle-08"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Name" ng-model="emailFormData.name">
+                                    </div>
+                                    <div class="input-group form-group-no-border">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons ui-1_email-85"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Email" ng-model="emailFormData.email">
+                                    </div>
+                                    <div class="input-group form-group-no-border">
+                                        <textarea type="text" style="border-radius:15px" class="form-control" placeholder="Message" rows="5" ng-model="emailFormData.message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="footer text-center">
+                                    <button type="submit" class="btn btn-neutral btn-round btn-lg" ng-click="sendEmail()">Send</button>
+                                    <p>{{ email_success_message }}</p>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!--  Footer -->
+        <footer class="footer" data-background-color="black">
+            <div class="container">
+                <div class="copyright">
+                    &copy; McGill Artificial Intelligence Society
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!--   Core JS Files   -->
+    <script src="./assets/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+    <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+    <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+    <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+    <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+    <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+    <script src="./assets/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
+    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+    <script src="./assets/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // the body of this function is in assets/js/now-ui-kit.js
+            nowuiKit.initSliders();
+        });
+
+        function scrollToDownload() {
+
+            if ($('.section-download').length != 0) {
+                $("html, body").animate({
+                    scrollTop: $('.section-download').offset().top
+                }, 1000);
+            }
+        }
+    </script>
+</body>
+</html>

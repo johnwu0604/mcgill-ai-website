@@ -6,7 +6,7 @@
             .navbar-collapse{
                 right: auto;
                 left: 0;
-                @include transform-translate-x(-300px);
+                @include transform-translate-x(-00px);
             }
         }
 
@@ -29,7 +29,7 @@
                 }
 
                 .navbar-translate{
-                    @include transform-translate-x(300px);
+                    @include transform-translate-x(00px);
                 }
 
                 .wrapper{
@@ -139,7 +139,7 @@
         &.menu-on-left .navbar-collapse{
             right: auto;
             left: 0;
-            @include transform-translate-x(-300px);
+            @include transform-translate-x(-00px);
         }
 
         [class*="navbar-expand-"]{
@@ -159,11 +159,11 @@
 
         .nav-open &{
             &.menu-on-left .navbar .navbar-translate{
-                @include transform-translate-x(300px);
+                @include transform-translate-x(00px);
             }
 
             .navbar .navbar-translate{
-                @include transform-translate-x(-300px);
+                @include transform-translate-x(-00px);
             }
 
             &.menu-on-left .navbar-collapse{
