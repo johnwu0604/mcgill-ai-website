@@ -1,7 +1,6 @@
 var request = require('request')
 
 module.exports = function(app) {
-
     app.post('/email', function(req, res) {
         // Configure the request for sending to slack
         var options = {
