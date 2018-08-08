@@ -71,7 +71,7 @@
 
         <!-- Header -->
         <div class="page-header">
-            <div class="page-header-image" data-parallax="false" style="background-image: url('./assets/img/implementai.jpg');">
+            <div class="page-header-image" data-parallax="true" style="background-image: url('./assets/img/implementai.jpg');">
             </div>
             <div class="container">
                 <div class="content-center brand">
@@ -90,7 +90,7 @@
             <div class="section section-about-us">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-8 ml-auto mr-auto text-center">
+                        <div class="col-md-10 ml-auto mr-auto text-center">
                             <h2 class="title">About</h2>
                             <h5 class="description">Join us for the second iteration of ImplementAI, a 24-hour hackathon focused exclusively on AI! <br> <br>
                                     ImplementAI will bring together students, researchers, and companies to explore creative applications using AI. Whether you plan on using AI-based platforms, virtual agents, open source technologies 
@@ -166,37 +166,28 @@
 
             <!-- Sponsors -->
             <div class="section">
-                <div class="container text-center">
-                    <div class="col-md-12 ml-auto mr-auto text-center">
+                <div style="margin:0; width:100%">
+                    <div class="col-md-12 ml-auto mr-auto text-center" style="width:100vw;">
                         <h2 class="title">Sponsors</h2>
                     </div>
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-12 ml-auto mr-auto">
-                            <div class="row">
-                                <div class="col-md-4">
-                                    <a href="https://www.microsoft.com/en-ca" target="_blank"><img src="./assets/img/microsoft.png" alt="" class="img-raised"></a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="https://www.automat.ai/" target="_blank"><img src="./assets/img/automat.png" alt="" class="img-raised"></a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a href="https://wrnch.ai/" target="_blank"><img src="./assets/img/wrnch.png" alt="" class="img-raised"></a>
-                                </div>
+                    <div class="row" style="width: 95vw; margin:auto; padding: 0;">
+                            <div class="row" style="display:inline-block">
+                                <a href="https://www.microsoft.com/en-ca" target="_blank" style="padding:0 3%"><img src="./assets/img/microsoft.png" class="img-raised"  style="width: 24%; "></a>
+                                <a href="https://www.automat.ai/" target="_blank" style="padding:0 3%"></a><img src="./assets/img/automat.png" class="img-raised"  style="width: 24%; "></a>
+                                <a href="https://wrnch.ai/" target="_blank" style="padding:0 3%"></a><img src="./assets/img/wrnch.png" class="img-raised"  style="width: 24%; "></a>
                             </div>
-                            <br><br>
-                        </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="row ml-auto mr-auto">
+                        <div class="ml-auto mr-auto">
                             <div class="col-lg-12 col-md-12 text-center sponsor-button">
+                                <h6>want to sponsor us?</h6>
                                 <a href="implement-ai-sponsorship-package.pdf" target="_blank" class="btn btn-round btn-lg" target="_blank">Sponsorship Package</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <br><br>
             </div>
 
             <!-- McGill AI Society Info -->
@@ -228,7 +219,7 @@
             <div class="section section-contact" style="background-image: url('assets/img/montreal.jpg'); background-size: cover; background-position: top center; min-height: 700px;">
                 <div class="container">
                     <div class="row">
-                        <div class="card card-contact" data-background-color="black">
+                        <div class="card card-contact" data-background-color="black" style="border-radius:5px">
                             <form class="form">
                                 <div class="header text-center">
                                     <h4 class="title title-up">Contact <span style="color: red">Us</span></h4>
@@ -247,7 +238,7 @@
                                         <input type="text" class="form-control" placeholder="Email" ng-model="emailFormData.email">
                                     </div>
                                     <div class="input-group form-group-no-border">
-                                        <textarea type="text" class="form-control" placeholder="Message" rows="5" ng-model="emailFormData.message"></textarea>
+                                        <textarea type="text" style="border-radius:15px" class="form-control" placeholder="Message" rows="5" ng-model="emailFormData.message"></textarea>
                                     </div>
                                 </div>
                                 <div class="footer text-center">

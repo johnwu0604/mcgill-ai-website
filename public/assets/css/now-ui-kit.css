@@ -5167,7 +5167,7 @@ i.now-ui-icons-circle {
 }
 
 .index-page .page-header {
-    height: 125vh;
+    height: 100vh;
 }
 
 .index-page .page-header .container>.content-center {
@@ -7564,14 +7564,8 @@ i.now-ui-icons-circle {
 }
 
 .sponsor-button {
-    padding-top: 30px;
+    padding-top: 40px;
 }
-
-
-
-
-
-
 
 .timeline {
     position: relative;
